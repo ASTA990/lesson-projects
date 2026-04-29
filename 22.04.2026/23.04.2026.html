@@ -1,0 +1,1324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main1 {
+        width: 100%;
+        height: 850px;
+      }
+
+      .middle1 {
+        width: 1380px;
+        height: 599px;
+        border-radius: 24px;
+        background:
+          linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.3)),
+          url(../rasmlar/689a2467122f863358e82f3cc1dbab4d71a827f9.jpg)
+            center/cover no-repeat;
+        background-position: center;
+        margin-top: 30px;
+        margin-left: 90px;
+        position: relative;
+      }
+
+      .golobe {
+        width: 714.3529663085938px;
+        height: 36px;
+        left: 32px;
+        top: 30px;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .findlar {
+        width: 242px;
+        height: 24px;
+        margin-top: 6px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .find1 {
+        width: 107px;
+        height: 24px;
+        color: white;
+      }
+
+      .find2 {
+        width: 107px;
+        height: 24px;
+        color: white;
+      }
+
+      .rasmbek1 img {
+        width: 110.35294342041016px;
+        height: 36px;
+        margin-left: 362px;
+      }
+
+      .kirish {
+        width: 177px;
+        height: 48px;
+        left: 1171px;
+        top: 24px;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .login {
+        color: white;
+      }
+
+      .login p {
+        margin-top: 15px;
+      }
+
+      .signup {
+        width: 104px;
+        height: 48px;
+        background-color: white;
+        border-radius: 10px;
+      }
+
+      .signup p {
+        margin-left: 24px;
+        margin-top: 15px;
+      }
+
+      .fontbeklar1 {
+        width: 753px;
+        height: 202px;
+        left: 343px;
+        top: 180px;
+        position: absolute;
+      }
+
+      .katta-font {
+        width: 753px;
+        height: 162px;
+      }
+
+      .hel {
+        width: 377px;
+        height: 57px;
+        font-size: 20px;
+        color: white;
+        margin-left: 188px;
+        text-align: center;
+      }
+
+      .live {
+        width: 753px;
+        height: 101px;
+        font-size: 50px;
+        color: white;
+        text-align: center;
+      }
+
+      .special {
+        width: 311px;
+        height: 24px;
+        margin-top: 16px;
+        margin-left: 221px;
+        text-align: center;
+        color: white;
+      }
+
+      .malumotlar {
+        width: 1232px;
+        height: 280px;
+        border: 1px solid gray;
+        border-radius: 20px;
+        margin-bottom: -200px;
+        margin-left: 150px;
+        position: absolute;
+        background-color: snow;
+        bottom: 150px;
+      }
+
+      .tepa {
+        width: 1184px;
+        height: 152px;
+        margin-left: 32px;
+        margin-top: 16px;
+      }
+
+      .flights-stays {
+        width: 229px;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .flights {
+        width: 76px;
+        height: 24px;
+        margin-top: 12px;
+      }
+
+      .stays {
+        width: 76px;
+        height: 24px;
+        margin-top: 12px;
+      }
+
+      .birgalikda {
+        width: 1184px;
+        height: 56px;
+        margin-top: 48px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .from {
+        width: 324px;
+        height: 56px;
+        border: 1px solid gray;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .ichkaribek {
+        width: 260px;
+        height: 40px;
+        margin-left: 16px;
+        margin-top: 8px;
+      }
+
+      .lahore {
+        width: 130px;
+        height: 20px;
+        margin-top: 10px;
+      }
+
+      .strelkalar {
+        width: 48px;
+        height: 48px;
+        margin-top: 2px;
+      }
+
+      .strelka {
+        width: 24px;
+        height: 24px;
+        margin-top: 12px;
+        margin-left: 12px;
+      }
+
+      .pasd {
+        width: 1168px;
+        height: 48px;
+        margin-left: 32px;
+        margin-top: 32px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .show {
+        width: 144px;
+        height: 48px;
+        border: 1px solid #8dd3bb;
+        background-color: #8dd3bb;
+      }
+
+      .show-yoz {
+        color: #112211;
+        margin-left: 20px;
+        margin-top: 15px;
+      }
+
+      .add {
+        width: 142px;
+        height: 48px;
+        border: 1px solid yellow;
+        background-color: yellow;
+      }
+
+      .add-yoz {
+        margin-top: 15px;
+      }
+
+      .main2 {
+        width: 100%;
+        height: 700px;
+      }
+
+      .middle2 {
+        width: 1232px;
+        height: 542px;
+        margin-left: 160px;
+      }
+
+      .planbek {
+        width: 1232px;
+        height: 72px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .plan {
+        width: 1059px;
+        height: 72px;
+      }
+
+      .trip {
+        width: 1059px;
+        height: 36px;
+      }
+
+      .hire {
+        width: 1059px;
+        height: 20px;
+        margin-top: 16px;
+      }
+
+      .places {
+        width: 149px;
+        height: 40px;
+        margin-top: 16px;
+      }
+
+      .places-yoz {
+        margin-top: 11px;
+        margin-left: 16px;
+      }
+
+      .davlatlar {
+        width: 1232px;
+        height: 430px;
+        margin-top: 40px;
+      }
+
+      .cartabek {
+        width: 389.3333435058594px;
+        height: 122px;
+        background-color: aliceblue;
+        border-radius: 16px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .usti {
+        width: 1232px;
+        height: 122px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .istanbulbek img {
+        width: 90px;
+        height: 90px;
+        margin-top: 16px;
+        margin-left: 16px;
+        border-radius: 10px;
+      }
+
+      .turkiyabeklar {
+        width: 251.33334350585938px;
+        height: 45px;
+        margin-top: 38px;
+      }
+
+      .turkiya-tepa {
+        width: 251.33334350585938px;
+        height: 20px;
+      }
+
+      .turkiya-past {
+        width: 251.33334350585938px;
+        height: 17px;
+        margin-top: 8px;
+      }
+
+      .orta {
+        width: 1232px;
+        height: 122px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+      }
+
+      .pastbek {
+        width: 1232px;
+        height: 122px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+      }
+
+      .main4 {
+        width: 100%;
+        height: 1000px;
+      }
+
+      .midlbek {
+        width: 1396px;
+        height: 722px;
+        margin-left: 100px;
+      }
+
+      .yozasanlar {
+        width: 1232px;
+        height: 72px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .chapga-yoz {
+        width: 1128px;
+        height: 72px;
+      }
+
+      .chap-tepa {
+        width: 1128px;
+        height: 36px;
+      }
+
+      .chap-past {
+        width: 851px;
+        height: 20px;
+        margin-top: 16px;
+      }
+
+      .onga-yoz {
+        width: 80px;
+        height: 40px;
+        margin-top: 16px;
+        border: 1px solid rebeccapurple;
+      }
+
+      .yozbek {
+        width: 48px;
+        height: 17px;
+        margin-left: 16px;
+        margin-top: 11px;
+      }
+
+      .boxbeklar {
+        width: 1396px;
+        height: 610px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .boxbek {
+        width: 425px;
+        height: 584px;
+        border: 1px solid gray;
+        border-radius: 20px;
+      }
+
+      .olga {
+        width: 377px;
+        height: 296px;
+        margin-top: 24px;
+        margin-left: 24px;
+      }
+
+      .staff {
+        width: 377px;
+        height: 163px;
+      }
+
+      .nartured {
+        width: 377px;
+        height: 80px;
+      }
+
+      .help {
+        width: 377px;
+        height: 67px;
+        margin-top: 16px;
+      }
+
+      .during {
+        width: 377px;
+        height: 37px;
+      }
+
+      .more {
+        width: 377px;
+        height: 18px;
+        margin-top: 12px;
+      }
+
+      .weave {
+        width: 377px;
+        height: 117px;
+        margin-top: 16px;
+      }
+
+      .yulduzlar {
+        width: 377px;
+        height: 24px;
+      }
+
+      .kai {
+        width: 377px;
+        height: 73px;
+        margin-top: 20px;
+      }
+
+      .tak {
+        width: 377px;
+        height: 37px;
+      }
+
+      .olg {
+        width: 377px;
+        height: 18px;
+      }
+
+      .studios {
+        width: 377px;
+        height: 15px;
+        margin-top: 4px;
+      }
+
+      .google {
+        width: 377px;
+        height: 24px;
+        margin-top: 12px;
+      }
+
+      .toglar img {
+        width: 377px;
+        height: 200px;
+        border-radius: 8px;
+        margin-left: 24px;
+        margin-top: 40px;
+      }
+
+      .hero {
+        width: 1380px;
+        height: 580px;
+        background:
+          linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.2)),
+          url(../img/banner.jpg) center/cover no-repeat;
+        margin: 20px auto;
+        border-radius: 24px;
+        padding: 20px;
+      }
+
+      .hero a {
+        text-decoration: none;
+        color: snow;
+      }
+      .hero i {
+        color: snow;
+      }
+      ul li {
+        list-style: none;
+      }
+      .hero-navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .logo a {
+        font-size: 26px;
+        color: #8dd3bb;
+      }
+      .frame {
+        width: 230px;
+      }
+      .frame ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .login {
+        width: 210px;
+      }
+
+      .login ul {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .login a {
+        padding: 10px 24px;
+        border-radius: 10px;
+      }
+      .sign-up {
+        background-color: snow;
+        color: black !important;
+      }
+
+      .hero-content {
+        width: 750px;
+        height: 200px;
+        margin: 80px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .helping-other {
+        font-size: 45px;
+        color: snow;
+        text-transform: capitalize;
+      }
+
+      .live-travel {
+        font-size: 80px;
+        color: snow;
+        text-transform: uppercase;
+      }
+
+      .hero-content p {
+        font-size: 20px;
+        color: snow;
+      }
+
+      /* form */
+      form {
+        width: 1232px;
+        height: 280px;
+        margin: -100px auto;
+        z-index: 5;
+        box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.1);
+        border-radius: 16px;
+        background-color: #fff;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      form .find {
+        display: flex;
+        width: 230px;
+        justify-content: space-between;
+      }
+
+      form .find .li {
+        border-right: 1px solid black;
+        padding-right: 10px;
+      }
+
+      form a {
+        text-decoration: none;
+        color: #000;
+      }
+      .fieldset {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .fieldset fieldset {
+        padding: 4px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .fieldset input,
+      select,
+      option {
+        border: none;
+        cursor: pointer;
+      }
+
+      form .submit {
+        display: flex;
+        justify-content: end;
+      }
+      form .submit li {
+        width: 144px;
+        height: 48px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 10px;
+      }
+      form .submit .btn input {
+        border: none;
+        background-color: transparent;
+      }
+      form .submit .btn {
+        border-radius: 5px;
+        background-color: #8dd3bb;
+        cursor: pointer;
+      }
+
+      .middle {
+        height: 40vh;
+      }
+      /* footer */
+
+      footer {
+        width: 100%;
+        height: 422px;
+        background-color: #8dd3bb;
+        margin: auto;
+        z-index: -1;
+      }
+
+      .subscribe-newsletter {
+        width: 1232px;
+        height: 305px;
+        border-radius: 20px;
+        background-color: #cdeae1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        z-index: 10;
+        transform: translateY(-160px);
+        padding: 20px;
+      }
+      .subscribe-newsletter-left {
+        width: 593px;
+        height: 305px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      .subscribe-newsletter h2 {
+        font-size: 44px;
+      }
+      .subscribe-newsletter-left .inputs {
+        display: flex;
+      }
+
+      .footer {
+        width: 1232px;
+        height: 140px;
+        border: 1px solid red;
+        margin: auto;
+        transform: translateY(-70px);
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main1">
+      <div class="middle1">
+        <div class="golobe">
+          <div class="findlar">
+            <div class="find1">
+              <i class="fa-solid fa-plane"></i>
+              <span>Find Flight</span>
+            </div>
+
+            <div class="find2">
+              <i class="fa-solid fa-bed"></i>
+              <span>Find Stays</span>
+            </div>
+          </div>
+
+          <div class="rasmbek1">
+            <img src="../rasmlar/logo (2).png" alt="ozing tap" />
+          </div>
+        </div>
+
+        <div class="kirish">
+          <div class="login">
+            <p>Login</p>
+          </div>
+
+          <div class="signup">
+            <p>Sign up</p>
+          </div>
+        </div>
+
+        <div class="fontbeklar1">
+          <div class="katta-font">
+            <div class="hel">
+              <h1>Helping Others</h1>
+            </div>
+
+            <div class="live">
+              <h1>Live & Travel</h1>
+            </div>
+
+            <div class="special">
+              <h4>Special offers to suit your plan</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="malumotlar">
+        <div class="tepa">
+          <div class="flights-stays">
+            <div class="flights">
+              <i class="fa-solid fa-plane"></i>
+              <span>Flights</span>
+            </div>
+
+            <div class="stays">
+              <i class="fa-solid fa-bed"></i>
+              <span>stays</span>
+            </div>
+          </div>
+
+          <div class="birgalikda">
+            <div class="from">
+              <div class="ichkaribek">
+                <div class="lahore">
+                  <p>Lahore - Karachi</p>
+                </div>
+              </div>
+
+              <div class="strelkalar">
+                <div class="strelka">
+                  <i
+                    class="fa-solid fa-chevron-right"
+                    style="color: rgb(0, 0, 0)"
+                  ></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="from">
+              <div class="ichkaribek">
+                <div class="lahore">
+                  <p>Lahore - Karachi</p>
+                </div>
+              </div>
+
+              <div class="strelkalar">
+                <div class="strelka">
+                  <i
+                    class="fa-solid fa-chevron-right"
+                    style="color: rgb(0, 0, 0)"
+                  ></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="from">
+              <div class="ichkaribek">
+                <div class="lahore">
+                  <p>Lahore - Karachi</p>
+                </div>
+              </div>
+
+              <div class="strelkalar">
+                <div class="strelka">
+                  <i
+                    class="fa-solid fa-chevron-right"
+                    style="color: rgb(0, 0, 0)"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pasd">
+          <div class="show">
+            <div class="show-yoz">
+              <i
+                class="fa-solid fa-share-from-square"
+                style="color: rgb(0, 0, 0)"
+              ></i>
+              <span>Show Filghts</span>
+            </div>
+          </div>
+
+          <div class="add">
+            <div class="add-yoz">
+              <i class="fa-solid fa-plus" style="color: rgb(0, 0, 0)"></i>
+              <span>Add Promo Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main2">
+      <div class="middle2">
+        <div class="planbek">
+          <div class="plan">
+            <div class="trip">
+              <h1>Plan your perfect trip</h1>
+            </div>
+
+            <div class="hire">
+              <p>
+                Search Flights & Places Hire to our most popular destinations
+              </p>
+            </div>
+          </div>
+
+          <div class="places">
+            <div class="places-yoz">
+              <p>See more places</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="davlatlar">
+          <div class="usti">
+            <div class="cartabek">
+              <div class="istanbulbek">
+                <img
+                  src="../rasmlar/689a2467122f863358e82f3cc1dbab4d71a827f9.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="turkiyabeklar">
+                <div class="turkiya-tepa">
+                  <p>Istanbul, Turkey</p>
+                </div>
+
+                <div class="turkiya-past">
+                  <p>flights - Hotels - Resorts</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartabek">
+              <div class="istanbulbek">
+                <img
+                  src="../rasmlar/689a2467122f863358e82f3cc1dbab4d71a827f9.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="turkiyabeklar">
+                <div class="turkiya-tepa">
+                  <p>Istanbul, Turkey</p>
+                </div>
+
+                <div class="turkiya-past">
+                  <p>flights - Hotels - Resorts</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartabek">
+              <div class="istanbulbek">
+                <img
+                  src="../rasmlar/689a2467122f863358e82f3cc1dbab4d71a827f9.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="turkiyabeklar">
+                <div class="turkiya-tepa">
+                  <p>Istanbul, Turkey</p>
+                </div>
+
+                <div class="turkiya-past">
+                  <p>flights - Hotels - Resorts</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="orta">
+            <div class="cartabek">
+              <div class="istanbulbek">
+                <img
+                  src="../rasmlar/689a2467122f863358e82f3cc1dbab4d71a827f9.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="turkiyabeklar">
+                <div class="turkiya-tepa">
+                  <p>Istanbul, Turkey</p>
+                </div>
+
+                <div class="turkiya-past">
+                  <p>flights - Hotels - Resorts</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartabek">
+              <div class="istanbulbek">
+                <img
+                  src="../rasmlar/689a2467122f863358e82f3cc1dbab4d71a827f9.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="turkiyabeklar">
+                <div class="turkiya-tepa">
+                  <p>Istanbul, Turkey</p>
+                </div>
+
+                <div class="turkiya-past">
+                  <p>flights - Hotels - Resorts</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartabek">
+              <div class="istanbulbek">
+                <img
+                  src="../rasmlar/689a2467122f863358e82f3cc1dbab4d71a827f9.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="turkiyabeklar">
+                <div class="turkiya-tepa">
+                  <p>Istanbul, Turkey</p>
+                </div>
+
+                <div class="turkiya-past">
+                  <p>flights - Hotels - Resorts</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pastbek">
+            <div class="cartabek">
+              <div class="istanbulbek">
+                <img
+                  src="../rasmlar/689a2467122f863358e82f3cc1dbab4d71a827f9.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="turkiyabeklar">
+                <div class="turkiya-tepa">
+                  <p>Istanbul, Turkey</p>
+                </div>
+
+                <div class="turkiya-past">
+                  <p>flights - Hotels - Resorts</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartabek">
+              <div class="istanbulbek">
+                <img
+                  src="../rasmlar/689a2467122f863358e82f3cc1dbab4d71a827f9.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="turkiyabeklar">
+                <div class="turkiya-tepa">
+                  <p>Istanbul, Turkey</p>
+                </div>
+
+                <div class="turkiya-past">
+                  <p>flights - Hotels - Resorts</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartabek">
+              <div class="istanbulbek">
+                <img
+                  src="../rasmlar/689a2467122f863358e82f3cc1dbab4d71a827f9.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="turkiyabeklar">
+                <div class="turkiya-tepa">
+                  <p>Istanbul, Turkey</p>
+                </div>
+
+                <div class="turkiya-past">
+                  <p>flights - Hotels - Resorts</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main4">
+      <div class="midlbek">
+        <div class="yozasanlar">
+          <div class="chapga-yoz">
+            <div class="chap-tepa">
+              <h1>Reviews</h1>
+            </div>
+
+            <div class="chap-past">
+              <p>What people says about Golobe facilities</p>
+            </div>
+          </div>
+
+          <div class="onga-yoz">
+            <div class="yozbek">
+              <h4>See all</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="boxbeklar">
+          <div class="boxbek">
+            <div class="olga">
+              <div class="staff">
+                <div class="nartured">
+                  <h2>“A real sense of community, nurtured”</h2>
+                </div>
+
+                <div class="help">
+                  <div class="during">
+                    <p>
+                      Really appreciate the help and support from the staff
+                      during these tough times. Shoutout to Katie
+                    </p>
+                  </div>
+
+                  <div class="more">
+                    <h5>View more</h5>
+                  </div>
+                </div>
+
+                <div class="weave">
+                  <div class="yulduzlar">
+                    <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+                  </div>
+
+                  <div class="kai">
+                    <div class="tak">
+                      <div class="olg">
+                        <h5>Olga</h5>
+                      </div>
+
+                      <div class="studios">
+                        <p>Weave Studios – Kai Tak</p>
+                      </div>
+                    </div>
+
+                    <div class="google">
+                      <i
+                        class="fa-brands fa-google"
+                        style="color: rgb(0, 0, 0)"
+                      ></i>
+                      <span>Google</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="toglar">
+              <img
+                src="../rasmlar/9ef0fb292d9afcfc8f6b2105b415f4d1a3703551.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="boxbek">
+            <div class="olga">
+              <div class="staff">
+                <div class="nartured">
+                  <h2>“A real sense of community, nurtured”</h2>
+                </div>
+
+                <div class="help">
+                  <div class="during">
+                    <p>
+                      Really appreciate the help and support from the staff
+                      during these tough times. Shoutout to Katie
+                    </p>
+                  </div>
+
+                  <div class="more">
+                    <h5>View more</h5>
+                  </div>
+                </div>
+
+                <div class="weave">
+                  <div class="yulduzlar">
+                    <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+                  </div>
+
+                  <div class="kai">
+                    <div class="tak">
+                      <div class="olg">
+                        <h5>Olga</h5>
+                      </div>
+
+                      <div class="studios">
+                        <p>Weave Studios – Kai Tak</p>
+                      </div>
+                    </div>
+
+                    <div class="google">
+                      <i
+                        class="fa-brands fa-google"
+                        style="color: rgb(0, 0, 0)"
+                      ></i>
+                      <span>Google</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="toglar">
+              <img
+                src="../rasmlar/9ef0fb292d9afcfc8f6b2105b415f4d1a3703551.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="boxbek">
+            <div class="olga">
+              <div class="staff">
+                <div class="nartured">
+                  <h2>“A real sense of community, nurtured”</h2>
+                </div>
+
+                <div class="help">
+                  <div class="during">
+                    <p>
+                      Really appreciate the help and support from the staff
+                      during these tough times. Shoutout to Katie
+                    </p>
+                  </div>
+
+                  <div class="more">
+                    <h5>View more</h5>
+                  </div>
+                </div>
+
+                <div class="weave">
+                  <div class="yulduzlar">
+                    <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+                  </div>
+
+                  <div class="kai">
+                    <div class="tak">
+                      <div class="olg">
+                        <h5>Olga</h5>
+                      </div>
+
+                      <div class="studios">
+                        <p>Weave Studios – Kai Tak</p>
+                      </div>
+                    </div>
+
+                    <div class="google">
+                      <i
+                        class="fa-brands fa-google"
+                        style="color: rgb(0, 0, 0)"
+                      ></i>
+                      <span>Google</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="toglar">
+              <img
+                src="../rasmlar/9ef0fb292d9afcfc8f6b2105b415f4d1a3703551.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="subscribe-newsletter">
+        <div class="subscribe-newsletter-left">
+          <h2>
+            Subscribe <br />
+            Newsletter
+          </h2>
+          <b>The Travel</b>
+          <p>
+            Get inspired! Receive travel discounts, tips and behind the scenes
+            stories.
+          </p>
+          <div class="inputs">
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Your email address"
+            />
+            <input type="submit" value="Subscribe" />
+          </div>
+        </div>
+        <img src="" alt="" />
+      </div>
+
+      <div class="footer">
+        <div class="golobe">
+          <img src="./assets/img/logo.png" alt="" />
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <ul>
+          <li>Our Destinations</li>
+          <li>Canada</li>
+          <li>Alaksa</li>
+          <li>France</li>
+          <li>Iceland</li>
+        </ul>
+        <ul>
+          <li>Our Activities</li>
+          <li>Northern Lights</li>
+          <li>Cruising & sailing</li>
+          <li>Multi-activities</li>
+          <li>Kayaing</li>
+        </ul>
+        <ul>
+          <li>Travel Blogs</li>
+          <li>Bali Travel Guide</li>
+          <li>Sri Lanks Travel Guide</li>
+          <li>Peru Travel Guide</li>
+          <li>Bali Travel Guide</li>
+        </ul>
+        <ul>
+          <li>About Us</li>
+          <li>Our Story</li>
+          <li>Work with us</li>
+        </ul>
+        <ul>
+          <li>Our Destinations</li>
+          <li>Our Story</li>
+          <li>Work with us</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
