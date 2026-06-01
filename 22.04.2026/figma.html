@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      .hero {
+        min-height: 100vh;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url(../rasmlar/689a2467122f863358e82f3cc1dbab4d71a827f9.jpg);
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding: 20px 80px;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 20px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .logo i {
+        width: 60px;
+      }
+
+      .logo h2 {
+        font-size: 32px;
+        font-weight: 300;
+      }
+
+      .logo p {
+        font-size: 11px;
+      }
+
+      nav {
+        display: flex;
+        gap: 40px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      .content {
+        min-height: 80vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      .left h1 {
+        font-size: 90px;
+        font-weight: 300;
+        line-height: 1.1;
+        margin-bottom: 25px;
+      }
+
+      .line {
+        width: 300px;
+        height: 4px;
+        background: #d89d2b;
+        margin-bottom: 25px;
+      }
+
+      .left p {
+        max-width: 500px;
+        line-height: 1.8;
+        color: #ddd;
+        margin-bottom: 30px;
+      }
+
+      .btn {
+        color: #d89d2b;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .stats {
+        display: flex;
+        gap: 60px;
+        margin-bottom: 40px;
+      }
+
+      .stats h2 {
+        font-size: 55px;
+        color: #d89d2b;
+        font-weight: 300;
+      }
+
+      .stats p {
+        margin-top: 10px;
+      }
+
+      .main1 {
+        width: 100%;
+        height: 636px;
+        margin-top: 191px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .rasmbek img {
+        width: 491px;
+        height: 636px;
+      }
+
+      .card {
+        width: 608px;
+        background: #f8f8f8;
+        padding: 20px 0 0;
+        position: relative;
+      }
+
+      .card h1 {
+        font-size: 58px;
+        font-weight: 300;
+        line-height: 1.1;
+        color: #2c3a2f;
+        margin: 0 0 25px 0;
+        padding: 0 35px;
+        font-family: Georgia, serif;
+      }
+
+      .desc {
+        color: #8a8a8a;
+        font-size: 14px;
+        line-height: 1.8;
+        padding: 0 35px;
+        margin-bottom: 30px;
+      }
+
+      .features {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        padding: 0 35px 20px;
+      }
+
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #888;
+        font-size: 15px;
+      }
+
+      .item i {
+        font-size: 28px;
+      }
+
+      .item.active {
+        color: #d8902f;
+      }
+
+      .info-box {
+        background: #425a4c;
+        color: #fff;
+        padding: 28px 35px;
+        margin-top: 10px;
+        position: relative;
+      }
+
+      .arrow {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 12px solid #425a4c;
+        position: absolute;
+        top: -12px;
+        left: 55px;
+      }
+
+      .info-box p {
+        font-size: 15px;
+        line-height: 1.8;
+      }
+
+      .read-more {
+        display: block;
+        text-align: right;
+        padding: 35px;
+        text-decoration: none;
+        color: #b0b0b0;
+        font-size: 22px;
+        font-weight: 300;
+      }
+
+      .brands {
+        background: linear-gradient(90deg, #263d2f, #3a5844);
+        min-height: 120px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 40px;
+        margin-top: 191px;
+      }
+
+      .logo-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #8d948f;
+      }
+
+      .logo-item i {
+        font-size: 42px;
+      }
+
+      .logo-item h4 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      .logo-item span {
+        font-size: 11px;
+        display: block;
+      }
+
+      .logo-item.active {
+        color: #e6a23a;
+      }
+
+      .main2 {
+        width: 100%;
+        height: 607px;
+        margin-top: 191px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .container {
+        width: 60%;
+        height: 579.7506103515625px;
+        background: #fff;
+        padding: 40px;
+        text-align: center;
+        margin-top: 13px;
+      }
+
+      .container h1 {
+        font-family: Georgia, serif;
+        font-size: 64px;
+        font-weight: 300;
+        color: #1f2c29;
+        line-height: 1.1;
+        margin-bottom: 25px;
+      }
+
+      p {
+        color: #8d8d8d;
+        max-width: 700px;
+        margin: 0 auto 60px;
+        line-height: 1.8;
+      }
+
+      .activities {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+      }
+
+      .item {
+        text-align: center;
+        color: #8b8b8b;
+      }
+
+      .item i {
+        font-size: 60px;
+        margin-bottom: 15px;
+      }
+
+      .item h3 {
+        font-size: 22px;
+        font-weight: 400;
+      }
+
+      .item.active {
+        color: #d8942c;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 42px;
+        }
+
+        .activities {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      .rassom img {
+        width: 506px;
+        height: 607px;
+      }
+
+      .main3 {
+        width: 100%;
+        height: 650px;
+        margin-top: 191px;
+        display: flex;
+        justify-content: space-around;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .rassom2 img {
+        width: 506px;
+        height: 578px;
+      }
+
+      .wrapper {
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .client-reviews {
+        width: 900px;
+        margin: 0 auto;
+      }
+
+      .client-reviews h1 {
+        font-family: Georgia, serif;
+        font-size: 70px;
+        font-weight: 400;
+        color: #223126;
+        line-height: 1.1;
+        margin-bottom: 30px;
+      }
+
+      .rating {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: #777;
+        font-size: 18px;
+        margin-bottom: 50px;
+      }
+
+      .rating .stars {
+        color: #d89d3d;
+        font-size: 25px;
+      }
+
+      .kartalar {
+        display: flex;
+        gap: 25px;
+      }
+
+      .karta {
+        width: 380px;
+        min-height: 280px;
+        padding: 35px 30px;
+        position: relative;
+      }
+
+      .light {
+        background: #e5e5e5;
+        color: #777;
+      }
+
+      .dark {
+        background: #3f5d45;
+        color: #fff;
+      }
+
+      .karta p {
+        font-size: 20px;
+        line-height: 1.8;
+        margin-bottom: 25px;
+      }
+
+      .karta-stars {
+        color: #d89d3d;
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+
+      .karta h3 {
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      .karta img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        position: absolute;
+        right: 20px;
+        bottom: -40px;
+        border: 4px solid #fff;
+      }
+
+      .bratan {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 80px 20px;
+      }
+
+      .bratan h1 {
+        text-align: center;
+        font-size: 64px;
+        font-family: "Times New Roman", serif;
+        font-weight: 400;
+        color: #1f2a24;
+        line-height: 1.1;
+        margin-bottom: 30px;
+      }
+
+      .subtitle {
+        max-width: 900px;
+        margin: 0 auto 80px;
+        text-align: center;
+        color: #8a8a8a;
+        font-size: 16px;
+        line-height: 1.8;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px 50px;
+      }
+
+      .service-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 25px;
+      }
+
+      .service-item i {
+        font-size: 55px;
+        color: #9d9d9d;
+        min-width: 60px;
+      }
+
+      .service-item h3 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #7d7d7d;
+        margin-bottom: 12px;
+      }
+
+      .service-item p {
+        color: #8d8d8d;
+        font-size: 16px;
+        line-height: 1.8;
+      }
+
+      .service-item.active i,
+      .service-item.active h3,
+      .service-item.active p {
+        color: #d7922f;
+      }
+
+      @media (max-width: 992px) {
+        .services-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        h1 {
+          font-size: 48px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+
+        h1 {
+          font-size: 36px;
+        }
+
+        .subtitle {
+          margin-bottom: 50px;
+        }
+
+        .service-item {
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <header>
+        <div class="logo">
+          <i class="fa-solid fa-spider" style="color: rgb(0, 0, 0)"></i>
+          <div>
+            <h2>HICAMP</h2>
+            <p>CAMPING & ADVENTURE</p>
+          </div>
+        </div>
+
+        <nav>
+          <a href="#">HOME</a>
+          <a href="#">ABOUT US</a>
+          <a href="#">ACTIVITIES</a>
+          <a href="#">PAGES</a>
+          <a href="#">CONTACT US</a>
+        </nav>
+      </header>
+
+      <div class="content">
+        <div class="left">
+          <h1>
+            A SIMPLE CAMP<br />
+            FOR THE BEST<br />
+            EXPERIENCE
+          </h1>
+
+          <div class="line"></div>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <a href="#" class="btn">
+            LEARN MORE
+            <span>➜</span>
+          </a>
+        </div>
+
+        <div class="stats">
+          <div>
+            <h2>34</h2>
+            <p>Great Rooms</p>
+          </div>
+
+          <div>
+            <h2>25</h2>
+            <p>Years Experience</p>
+          </div>
+
+          <div>
+            <h2>1300</h2>
+            <p>Guests</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="main1">
+      <div class="rasmbek">
+        <img
+          src="../rasmlar/97c4b8f777fdba7e2d530a5b597a6775d6c7dfee.png"
+          alt=""
+        />
+      </div>
+
+      <div class="card">
+        <h1>SPEND YOUR FREE<br />TIME ACTIVELY</h1>
+
+        <p class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+
+        <div class="features">
+          <div class="item active">
+            <i class="fa-solid fa-utensils"></i>
+            <span>RESTAURANT</span>
+          </div>
+
+          <div class="item">
+            <i class="fa-solid fa-bicycle"></i>
+            <span>BIKE ROUTE</span>
+          </div>
+
+          <div class="item">
+            <i class="fa-regular fa-mountain"></i>
+            <span>NATURE</span>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <div class="arrow"></div>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris.
+          </p>
+        </div>
+
+        <a href="#" class="read-more">READ MORE</a>
+      </div>
+    </div>
+
+    <div class="brands">
+      <div class="logo-item">
+        <i class="fa-solid fa-play"></i>
+        <div>
+          <h4>TECHBRAND</h4>
+          <span>YOUR TAGLINE GOES HERE</span>
+        </div>
+      </div>
+
+      <div class="logo-item">
+        <i class="fa-solid fa-xmarks-lines"></i>
+        <div>
+          <h4>TECHBRAND</h4>
+          <span>YOUR TAGLINE GOES HERE</span>
+        </div>
+      </div>
+
+      <div class="logo-item active">
+        <i class="fa-solid fa-g"></i>
+        <div>
+          <h4>TECHBRAND</h4>
+          <span>YOUR TAGLINE GOES HERE</span>
+        </div>
+      </div>
+
+      <div class="logo-item">
+        <i class="fa-solid fa-bullseye"></i>
+        <div>
+          <h4>TECHBRAND</h4>
+          <span>YOUR TAGLINE GOES HERE</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="main2">
+      <div class="container">
+        <h1>
+          THERE ARE MANY <br />
+          ACTIVITIES IN HERE
+        </h1>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam.
+        </p>
+
+        <div class="activities">
+          <div class="item">
+            <i class="fa-solid fa-mountain"></i>
+            <h3>HIKING</h3>
+          </div>
+
+          <div class="item active">
+            <i class="fa-solid fa-tent"></i>
+            <h3>CAMPING</h3>
+          </div>
+
+          <div class="item">
+            <i class="fa-solid fa-bicycle"></i>
+            <h3>BIKE ROUTES</h3>
+          </div>
+
+          <div class="item">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>BARBEQUE</h3>
+          </div>
+
+          <div class="item">
+            <i class="fa-solid fa-fish"></i>
+            <h3>FISHING</h3>
+          </div>
+
+          <div class="item">
+            <i class="fa-solid fa-fire"></i>
+            <h3>CAMPFIRE</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="rassom">
+        <img
+          src="../rasmlar/fff80f43396a67695ef2d74e2b329b1fa904c9d9.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="main3">
+      <div class="rassom2">
+        <img
+          src="../rasmlar/a408e1da1b8d434c69e9c53530c19870c3ad6b6e.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="client-reviews">
+        <h1>
+          WHAT CLIENT SAYS <br />
+          ABOUT HICAMP
+        </h1>
+
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span>4.8 out of 5 stars from 2.1k reviews</span>
+        </div>
+
+        <div class="kartalar">
+          <div class="karta light">
+            <p>
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna.”
+            </p>
+
+            <div class="karta-stars">★★★★★</div>
+
+            <h3>NICK COLTMAN</h3>
+
+            <img src="https://i.pravatar.cc/100?img=12" alt="" />
+          </div>
+
+          <div class="karta dark">
+            <p>
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna.”
+            </p>
+
+            <div class="karta-stars">★★★★★</div>
+
+            <h3>ANTHONY BUXTON</h3>
+
+            <img src="https://i.pravatar.cc/100?img=15" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bratan">
+      <h1>
+        WE PROVIDE THE BEST <br />
+        ACCOMMODATION
+      </h1>
+
+      <p class="subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris.
+      </p>
+
+      <div class="services-grid">
+        <div class="service-item">
+          <i class="fa-solid fa-bell-concierge"></i>
+          <div>
+            <h3>BREAKFAST</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-item active">
+          <i class="fa-solid fa-trophy"></i>
+          <div>
+            <h3>SECURITY</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <i class="fa-regular fa-clock"></i>
+          <div>
+            <h3>24 SERVICES</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <i class="fa-solid fa-square-parking"></i>
+          <div>
+            <h3>PARKING</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <i class="fa-solid fa-fire-hydrant"></i>
+          <div>
+            <h3>FIRE FIGHTER</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <i class="fa-solid fa-shirt"></i>
+          <div>
+            <h3>LAUNDRY</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
