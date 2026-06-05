@@ -13,7 +13,6 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: Arial, sans-serif;
       }
 
       .hero {
@@ -272,7 +271,7 @@
         margin-bottom: 25px;
       }
 
-      p {
+      .container p {
         color: #8d8d8d;
         max-width: 700px;
         margin: 0 auto 60px;
@@ -304,15 +303,7 @@
         color: #d8942c;
       }
 
-      @media (max-width: 768px) {
-        h1 {
-          font-size: 42px;
-        }
-
-        .activities {
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
+      
 
       .rassom img {
         width: 506px;
@@ -480,34 +471,55 @@
         color: #d7922f;
       }
 
-      @media (max-width: 992px) {
-        .services-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-
-        h1 {
-          font-size: 48px;
-        }
+      .middle3 {
+        width: 100%;
+        height: 534px;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url(../rasmlar/689a2467122f863358e82f3cc1dbab4d71a827f9.jpg);
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding: 20px 80px;
+        margin-top: 191px;
       }
 
-      @media (max-width: 768px) {
-        .services-grid {
-          grid-template-columns: 1fr;
-        }
+      .orta {
+        width: 885px;
+        height: 334px;
+        margin-top: 90px;
+        margin-left: 278px;
+      }
 
-        h1 {
-          font-size: 36px;
-        }
+      .tepa {
+        width: 885px;
+        height: 160px;
+      }
 
-        .subtitle {
-          margin-bottom: 50px;
-        }
+      .tepa h1 {
+        font-size: 70px;
+        text-align: center;
+      }
 
-        .service-item {
-          flex-direction: column;
-          text-align: center;
-          align-items: center;
-        }
+      .pastgi {
+        width: 885px;
+        height: 50px;
+        margin-top: 32px;
+        text-align: center;
+      }
+
+      .eng-pastgi {
+        width: 171px;
+        height: 28px;
+        margin-top: 62px;
+        margin-left: 357px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .eng-pastgi i {
+        color: white;
+        font-size: 20px;
       }
     </style>
   </head>
@@ -838,6 +850,21 @@
       </div>
     </div>
 
-    
+    <div class="middle3">
+      <div class="orta">
+        <div class="tepa">
+          <h1>Enough of your city life. its time for camping</h1>
+        </div>
+
+        <div class="pastgi">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <div class="eng-pastgi">
+          <h3>join us now</h3>
+          <span><i class="fa-solid fa-clock" style="color: rgb(0, 0, 0);"></i></span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
